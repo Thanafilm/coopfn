@@ -1,0 +1,1 @@
+export const API_NEWS='https://fast-taiga-08932.herokuapp.com/api'
