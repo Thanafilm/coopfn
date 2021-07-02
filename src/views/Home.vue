@@ -1,9 +1,13 @@
 <template>
-  <div class="home container-fuild">
-    <Banner msg="Welcome to Your Vue.js App"/>
-    <News/>
-    <Gallery />
-    <Video />
+  <div class="home container-fuild" >
+ 
+    <component  :is="compo[0].title"></component>
+    <component  :is="compo[1].title"></component>
+    <component  :is="compo[2].title"></component>
+    <component  :is="compo[3].title"></component>
+
+  
+
   </div>
 </template>
 
@@ -22,6 +26,16 @@ export default {
     Video,
     
    
+  },
+  data:function(){
+    return{
+
+      compo:[{id:1,title:"Video"},{id:2,title:"Banner"},{id:3,title:"News"},{id:4,title:"Gallary"}]
+    }
+  },
+  mounted:function(){
+    //api
   }
+
 }
 </script>
