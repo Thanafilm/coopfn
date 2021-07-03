@@ -1,5 +1,6 @@
 <template>
-  <div class="bo">
+  <div class="bo"
+  ><b-icon icon="circle-fill" animation="throb" font-scale="4"></b-icon>
     <div class="">
       <div class="container">
         <div class="card-body text-left">
