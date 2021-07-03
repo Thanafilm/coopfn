@@ -48,7 +48,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    <div class="v">.</div>
+    
   </div>
 </template>
 
@@ -78,7 +78,8 @@ export default {
 
 <style>
 .v {
-  height: 5px;
+  height: 3px;
   background-color: #d9a327;
 }
+
 </style>

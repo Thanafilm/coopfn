@@ -1,6 +1,5 @@
 <template>
   <div class="bo ">
-    <div class="v container">.</div>
     <div class="container bot form-group">
       <div class="card-body text-left">
         <h3 class="title d-flex">
@@ -156,6 +155,6 @@ export default {
 }
 .bo {
   margin-bottom: 50px;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 </style>

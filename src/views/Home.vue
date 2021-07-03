@@ -1,9 +1,12 @@
 <template>
   <div class="home container-fuild" >
- 
+ <div class="v">.</div>
     <component  :is="compo[0].title"></component>
+    <div class="v">.</div>
     <component  :is="compo[1].title"></component>
+    <div class="v">.</div>
     <component  :is="compo[2].title"></component>
+    <div class="v">.</div>
     <component  :is="compo[3].title"></component>
 
   

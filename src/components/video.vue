@@ -1,6 +1,5 @@
 <template>
   <div class="bo">
-    <div class="v container">.</div>
     <div class="">
       <div class="container">
         <div class="card-body text-left">
