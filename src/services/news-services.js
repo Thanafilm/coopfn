@@ -66,6 +66,9 @@ export default class NewsService {
     getschedulec() {
         return API_NEWS.get("/schedule/coop")
     }
+    getSection() {
+        return API_NEWS.get('/section')
+    }
 
 
 

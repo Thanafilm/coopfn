@@ -1,9 +1,13 @@
 <template>
-  <div class="home container-fuild">
-    <Banner msg="Welcome to Your Vue.js App"/>
-    <News/>
-    <Gallery />
-    <Video />
+  <div class="home container-fuild" >
+ 
+    <component  :is="compo[0].title"></component>
+    <component  :is="compo[1].title"></component>
+    <component  :is="compo[2].title"></component>
+    <component  :is="compo[3].title"></component>
+
+  
+
   </div>
 </template>
 
@@ -13,6 +17,8 @@ import Banner from '@/components/Banner.vue'
 import News from '../components/News.vue'
 import Gallery from '../components/Gallery.vue'
 import Video from '../components/video.vue'
+import Service from './../services/news-services'
+const api = new  Service();
 export default {
   name: 'Home',
   components: {
@@ -22,6 +28,19 @@ export default {
     Video,
     
    
+  },
+  data:function(){
+    return{
+
+      compo:[{id:1,title:"Banner"},{id:2,title:"News"},{id:3,title:"Gallary"},{id:4,title:"Video"}]
+    }
+  },
+  mounted:function(){
+    api.getSection().then(res=>{
+      this.compo=res.data||this.compo
+      console.log(this.compo);
+    })
   }
+
 }
 </script>
