@@ -47,3 +47,9 @@ export default {
 
 }
 </script>
+<style>
+.v {
+  height: 3px;
+  background-color: #d9a327;
+}
+</style>
